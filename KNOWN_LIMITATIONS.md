@@ -29,10 +29,14 @@
 ## What it cannot do yet
 
 - Edit the Playlist arrangement (clips on tracks).
+- Make automation clips.
+- Start a new project or open another one: use File → New / File → Open in FL.
 - Render or export audio.
 - Load third-party plugins into channels or mixer slots.
 - Some edits inside FL have no FL undo when made from a script (step sequencer).
   Use "undo" in the Sessionmate chat for those.
+
+From 0.5: when you ask for one of these, or FL can't do a step, the chat shows why and the steps to do it by hand.
 
 ## Models
 
