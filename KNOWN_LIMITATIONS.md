@@ -44,6 +44,7 @@
 
 ## Reporting
 
-- Sessionmate sends nothing by itself. To report a bug, collect the report in the window
-  (*Settings → Diagnostics → Collect report*) and attach it to an issue. The Windows user name in paths
-  is replaced with `%USERPROFILE%`; sample names you rated stay in the file.
+- Sessionmate sends nothing by itself. To report a bug, save the log in the window
+  (*Settings → Diagnostics → Save log*; 0.4 and older: *Collect report*) and attach the file to an issue
+  or a #bugs post. The Windows user name in paths is replaced with `%USERPROFILE%`; sample names you rated
+  stay in the file; your requests only if you turn on "Include my requests in the log".

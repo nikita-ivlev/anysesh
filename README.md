@@ -69,7 +69,7 @@ See [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md). The short list:
 ## Report a bug or share an idea
 
 - **Bug:** [open a bug report](../../issues/new?template=bug_report.yml).
-  Attach the report file: Sessionmate window → **Settings** → **Diagnostics** → **Collect report**.
+  Attach the log: Sessionmate window → **Settings** → **Diagnostics** → **Save log** (0.4 and older: **Collect report**).
 - **Idea:** [share an idea](../../issues/new?template=idea.yml).
 - **Chat:** [join the Discord](https://discord.gg/psbnWQw7JE) — help with setup, bugs, ideas, new releases.
 - **The maker:** Nick Ivlev — [Instagram @nick_ivlev](https://www.instagram.com/nick_ivlev/).

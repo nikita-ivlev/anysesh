@@ -60,11 +60,12 @@ body:
   - type: textarea
     id: report
     attributes:
-      label: Report file
+      label: Log file
       description: |
-        Sessionmate window → Settings → Diagnostics → Collect report.
-        Drag `support_diagnostics_bundle.json` here. Your Windows user name is masked in it;
-        names of sounds you rated stay in it.
+        Sessionmate window → Settings → Diagnostics → Save log.
+        Drag the `sessionmate_log_….zip` here. Your Windows user name is masked in it; names of
+        sounds you rated stay in it; your requests only if you turned on "Include my requests in the log".
+        Version 0.4 and older: Collect report, drag `support_diagnostics_bundle.json`.
     validations:
       required: false
   - type: textarea

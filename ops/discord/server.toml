@@ -109,9 +109,8 @@ One post = one bug. Before you post, search: maybe it is already reported.
 Please include:
 1. What you asked Sessionmate to do.
 2. What happened, and what you expected.
-3. FL Studio version and Windows version.
-4. The report file: Sessionmate window → Settings → Diagnostics → Collect report. Attach support_diagnostics_bundle.json.
-Do not post API keys. The report file does not contain them.
+3. The log: Sessionmate window → Settings → Diagnostics → Save log. Attach the sessionmate_log_….zip. It has the FL Studio and Windows versions. Version 0.4 and older: Collect report, attach support_diagnostics_bundle.json, and write your FL Studio and Windows version.
+Do not post API keys. The log does not contain them. Your requests are in it only if you turn on "Include my requests in the log".
 Each post gets a public GitHub issue: the text of your first message only, no name, no files. Status updates come back here."""
 default_reaction = "👀"
 tags = [
@@ -324,8 +323,9 @@ text = """
 1. **Search first.** Same bug here? 👍 it and add your details.
 2. **Title:** what broke, in a few words. *Kit search finds nothing*
 3. **Tag it:** 📦 installer · 🔌 fl-connection · 💬 chat · 🥁 samples · 💥 crash · 🐢 performance
-4. **Write:** what you did → what happened → what you expected. Your FL Studio and Windows version.
-5. **Attach the logs:** Sessionmate window → **Settings → Diagnostics → Collect report → Show in folder** → drag `support_diagnostics_bundle.json` into your post. No API key inside. The window does not open? A screenshot instead.
+4. **Write:** what you did → what happened → what you expected.
+5. **Attach the log:** Sessionmate window → **Settings → Diagnostics → Save log → Show in folder** → drag the `sessionmate_log_….zip` into your post. One file with all the logs and your FL Studio and Windows version. No API key inside. Your requests are in it only if you turn on *Include my requests in the log*: it helps us see what you asked.
+   Version 0.4 and older: **Collect report** → drag `support_diagnostics_bundle.json`, and write your FL Studio and Windows version. The window does not open? Zip the folder `%LOCALAPPDATA%\\FlMCP\\logs` and attach it, or a screenshot.
 
 We set the status: 🔍 confirmed → 🔧 fixed-in-next → ✅ fixed, with the version in a reply. A confirmed bug gives you {@bug-hunter}.
 Each post also becomes a public GitHub issue: your first message's text only. Setup questions: {#help}."""
@@ -358,7 +358,7 @@ text = """
 **No "Sessionmate" in FL's plugin list.** Options → Manage plugins → Find installed plugins. Then add it as an effect on the Master track of the Mixer.
 **FL does not react to requests.** Options → MIDI settings: input `fl-mcp` is on, controller type "Test Controller", port 77.
 **The sample folder does not work.** It must be on an NTFS drive: not a USB stick, not a network drive. Restart FL once after the first sort.
-**Something else broke.** Settings → Diagnostics → Collect report, then post in {#bugs} with the file.
+**Something else broke.** Settings → Diagnostics → Save log, then post in {#bugs} with the .zip file.
 Known limitations: <https://github.com/nikita-ivlev/sessionmate/blob/main/KNOWN_LIMITATIONS.md>"""
 
 # --- AutoMod: blocks the message and tells #mod-log; never bans, never times out ------------------
