@@ -670,9 +670,14 @@ def apply(dc: Discord, cfg: dict, *, dry_run: bool, prune: bool = False, echo=pr
             echo(f"  ! {c.desc} (not in server.toml; --prune deletes it)")
     if not done:
         echo("  server matches server.toml")
-    if any(c.method == "POST" and "/messages" not in c.path for c in done) and not dry_run:
+    if needs_pin_ids(done) and not dry_run:
         echo("  new things on the server: run pin-ids to write their ids into server.toml")
     return done
+
+
+def needs_pin_ids(done: list[Change]) -> bool:
+    """pin-ids writes ids of roles, categories and channels only: an emoji, automod rule or post needs none."""
+    return any(c.method == "POST" and c.path.endswith(("/roles", "/channels")) for c in done)
 
 
 def _run(dc: Discord, changes: list[Change], dry_run: bool, echo) -> None:
