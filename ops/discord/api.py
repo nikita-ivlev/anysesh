@@ -63,9 +63,11 @@ class Discord:
         }
         if files:
             data, headers["Content-Type"] = _multipart(body or {}, files)
-        else:
-            data = json.dumps(body).encode() if body is not None else None
+        elif body is not None:
+            data = json.dumps(body).encode()
             headers["Content-Type"] = "application/json"
+        else:
+            data = None   # a JSON Content-Type with no body: Discord answers 400 (seen on DELETE)
         for attempt in range(6):
             req = urllib.request.Request(API + path, data=data, method=method, headers=headers)
             try:

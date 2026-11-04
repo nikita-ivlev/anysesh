@@ -1,6 +1,8 @@
-<p align="center"><img src="assets/logo.png" width="128" height="128" alt="AnySesh logo"></p>
+<p align="center"><img src="assets/social-preview.png" width="640" alt="AnySesh — Your AI mate, right inside FL Studio"></p>
 
-# AnySesh™ for FL Studio 2026 — public alpha
+<p align="center"><b><a href="../../releases">Download for Windows</a></b> · <a href="https://discord.gg/psbnWQw7JE">Join the Discord</a></p>
+
+# AnySesh™: AI assistant for FL Studio 2026 — public alpha
 
 AnySesh is an AI assistant that lives inside FL Studio. Type or say what you need —
 it finds sounds in your own sample library, builds drum kits, writes chords and beats,
