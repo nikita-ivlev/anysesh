@@ -29,7 +29,8 @@
 ## What it cannot do yet
 
 - Edit the Playlist arrangement (clips on tracks).
-- Make automation clips.
+- Make automation clips in the Playlist. From 0.6 "open the filter over 8 bars" records the knob move,
+  but FL keeps it in the pattern; for a Playlist clip right-click the knob → "Create automation clip".
 - Start a new project or open another one: use File → New / File → Open in FL.
 - Render or export audio.
 - Load third-party plugins into channels or mixer slots.
