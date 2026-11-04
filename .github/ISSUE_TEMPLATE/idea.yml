@@ -1,15 +1,15 @@
 name: Idea
-description: Something Sessionmate should do, or do better.
+description: Something AnySesh should do, or do better.
 labels: [idea]
 body:
   - type: markdown
     attributes:
       value: |
-        By sharing an idea you agree we may use it in Sessionmate (EULA, "Feedback").
+        By sharing an idea you agree we may use it in AnySesh (EULA, "Feedback").
   - type: textarea
     id: request
     attributes:
-      label: What would you ask Sessionmate?
+      label: What would you ask AnySesh?
       description: Write it the way you would type it in the chat.
       placeholder: '"put a sidechain from the kick on the bass"'
     validations:

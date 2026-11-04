@@ -9,7 +9,7 @@ import urllib.request
 from pathlib import Path
 
 API = "https://discord.com/api/v10"
-_UA = "DiscordBot (https://github.com/nikita-ivlev/sessionmate, 1.0)"
+_UA = "DiscordBot (https://github.com/nikita-ivlev/anysesh, 1.0)"
 
 
 class DiscordError(RuntimeError):
@@ -21,7 +21,7 @@ class DiscordError(RuntimeError):
 def token_file() -> Path:
     if os.environ.get("DISCORD_BOT_TOKEN_FILE"):
         return Path(os.environ["DISCORD_BOT_TOKEN_FILE"])
-    return Path(os.environ.get("APPDATA", Path.home())) / "Sessionmate-dev" / "discord-bot-token"
+    return Path(os.environ.get("APPDATA", Path.home())) / "AnySesh-dev" / "discord-bot-token"
 
 
 def load_token() -> str:
@@ -36,7 +36,7 @@ def load_token() -> str:
 
 
 def _multipart(body: dict, files: list[tuple[str, bytes]]) -> tuple[bytes, str]:
-    boundary = "sessionmate" + os.urandom(8).hex()
+    boundary = "anysesh" + os.urandom(8).hex()
     parts = [(b'Content-Disposition: form-data; name="payload_json"\r\nContent-Type: application/json\r\n\r\n'
               + json.dumps(body).encode())]
     for i, (name, blob) in enumerate(files):
@@ -50,7 +50,7 @@ def _multipart(body: dict, files: list[tuple[str, bytes]]) -> tuple[bytes, str]:
 class Discord:
     """Thin REST wrapper. Never logs the token; waits out rate limits."""
 
-    def __init__(self, token: str | None = None, reason: str = "Sessionmate ops") -> None:
+    def __init__(self, token: str | None = None, reason: str = "AnySesh ops") -> None:
         self._token = token or load_token()
         self._reason = reason
 

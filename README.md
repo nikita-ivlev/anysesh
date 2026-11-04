@@ -1,8 +1,8 @@
-<p align="center"><img src="assets/logo.png" width="128" height="128" alt="Sessionmate logo"></p>
+<p align="center"><img src="assets/logo.png" width="128" height="128" alt="AnySesh logo"></p>
 
-# Sessionmate™ for FL Studio 2026 — public alpha
+# AnySesh™ for FL Studio 2026 — public alpha
 
-Sessionmate is an AI assistant that lives inside FL Studio. Type or say what you need —
+AnySesh is an AI assistant that lives inside FL Studio. Type or say what you need —
 it finds sounds in your own sample library, builds drum kits, writes chords and beats,
 and checks your mix. It works in FL Studio, not next to it.
 
@@ -34,28 +34,28 @@ Requests work in English and Russian.
   - **Your own key:** Claude, ChatGPT, DeepSeek, Gemini, Qwen, YandexGPT
   - **Claude Code** (if you already use it)
 
-Sessionmate does not ship with a key. You use your own; requests go from your PC
+AnySesh does not ship with a key. You use your own; requests go from your PC
 straight to the provider you picked.
 
 ## Install
 
 1. Close FL Studio.
-2. Download `Setup_Sessionmate_<version>.exe` from [Releases](../../releases).
+2. Download `Setup_AnySesh_<version>.exe` from [Releases](../../releases).
 3. Run it. If Windows SmartScreen says "Windows protected your PC": click **More info → Run anyway**.
    The installer is not code-signed yet. You can check the SHA-256 from the release page first.
-4. Windows asks once for administrator rights: that is loopMIDI, the virtual MIDI port Sessionmate uses.
+4. Windows asks once for administrator rights: that is loopMIDI, the virtual MIDI port AnySesh uses.
 5. Pick a model and click **Check**. Setup goes on only when the model answers.
-6. Start FL Studio. Add **Sessionmate** as an effect on the Master track of the Mixer.
+6. Start FL Studio. Add **AnySesh** as an effect on the Master track of the Mixer.
 7. In its window, click **Choose folder…** and pick your samples.
    Restart FL once after the first sort.
 
-No "Sessionmate" in the plugin list? *Options → Manage plugins → Find installed plugins.*
+No "AnySesh" in the plugin list? *Options → Manage plugins → Find installed plugins.*
 FL does not react? *Options → MIDI settings:* input `fl-mcp` is on, controller type
 "Test Controller", port 77.
 
-To remove it: close FL Studio, then *Windows Settings → Apps → Sessionmate → Uninstall*.
+To remove it: close FL Studio, then *Windows Settings → Apps → AnySesh → Uninstall*.
 To remove every trace (FL settings it added, data, logs, loopMIDI if Setup installed it):
-run **Uninstall Sessionmate (full cleanup)** from the program folder.
+run **Uninstall AnySesh (full cleanup)** from the program folder.
 Your samples are not touched.
 
 ## Known limitations
@@ -69,7 +69,7 @@ See [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md). The short list:
 ## Report a bug or share an idea
 
 - **Bug:** [open a bug report](../../issues/new?template=bug_report.yml).
-  Attach the log: Sessionmate window → **Settings** → **Diagnostics** → **Save log** (0.4 and older: **Collect report**).
+  Attach the log: AnySesh window → **Settings** → **Diagnostics** → **Save log** (0.4 and older: **Collect report**).
 - **Idea:** [share an idea](../../issues/new?template=idea.yml).
 - **Chat:** [join the Discord](https://discord.gg/psbnWQw7JE) — help with setup, bugs, ideas, new releases.
 - **The maker:** Nick Ivlev — [Instagram @nick_ivlev](https://www.instagram.com/nick_ivlev/).
@@ -82,10 +82,10 @@ yourself (a bug report, a message). Details: `PRIVACY.txt` in the program folder
 
 ## License
 
-Sessionmate is proprietary software, free to use during the alpha.
+AnySesh is proprietary software, free to use during the alpha.
 See [EULA.txt](EULA.txt). The source code is not public.
 Third-party components and their licenses: `THIRD_PARTY_NOTICES.txt` in the program folder.
 
-"Sessionmate" is a trademark of Nikita Ivlev. A fork or a copy may not use this name.
+"AnySesh" is a trademark of Nikita Ivlev. A fork or a copy may not use this name.
 
 © 2026 Nikita Ivlev. All rights reserved.

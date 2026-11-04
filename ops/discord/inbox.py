@@ -91,6 +91,6 @@ def _download(att: dict, folder: Path) -> None:
         return
     folder.mkdir(parents=True, exist_ok=True)
     name = re.sub(r"[^\w.\-]", "_", att["filename"])
-    req = urllib.request.Request(att["url"], headers={"User-Agent": "Sessionmate-ops"})
+    req = urllib.request.Request(att["url"], headers={"User-Agent": "AnySesh-ops"})
     with urllib.request.urlopen(req, timeout=60) as resp:
         (folder / f"{att['id']}-{name}").write_bytes(resp.read())

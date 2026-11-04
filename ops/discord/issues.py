@@ -18,7 +18,7 @@ from .api import Discord, DiscordError
 from .inbox import thread_url
 from .releases import forum_threads, retag, tag_ids
 
-PUBLIC_REPO = "nikita-ivlev/sessionmate"  # = constants.PUBLIC_REPO
+PUBLIC_REPO = "nikita-ivlev/anysesh"  # = constants.PUBLIC_REPO
 LABELS = {"discord": "5865F2", "bug": "d73a4a"}
 MARKER = re.compile(r"<!-- discord-thread:(\d+) -->")
 QUOTE_LIMIT = 3000
@@ -34,7 +34,7 @@ class GitHub:
             "https://api.github.com" + path.replace("{repo}", self.repo),
             data=json.dumps(body).encode() if body is not None else None, method=method,
             headers={"Authorization": f"Bearer {self._token}", "Accept": "application/vnd.github+json",
-                     "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "Sessionmate-ops"})
+                     "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "AnySesh-ops"})
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 raw = resp.read()
@@ -71,7 +71,7 @@ def issue_body(guild_id: str, thread: dict, first_text: str) -> str:
         text = text[:QUOTE_LIMIT] + " …"
     quote = "\n".join("> " + line for line in text.splitlines())
     return (f"Reported in Discord #bugs: {thread_url(guild_id, thread['id'])}\n\n{quote}\n\n"
-            "_Mirrored by the Sessionmate bot. The reporter's name and attached files stay in Discord._\n"
+            "_Mirrored by the AnySesh bot. The reporter's name and attached files stay in Discord._\n"
             f"<!-- discord-thread:{thread['id']} -->")
 
 

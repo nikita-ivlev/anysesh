@@ -23,7 +23,7 @@
 ## Sample library
 
 - The sample folder must be on an **NTFS** drive. USB sticks (FAT/exFAT) and network drives do not work:
-  Sessionmate sorts the library with hard links, and these drives have none.
+  AnySesh sorts the library with hard links, and these drives have none.
 - After the first sort, restart FL once so its browser shows the sorted tree.
 
 ## What it cannot do yet
@@ -35,7 +35,7 @@
 - Render or export audio.
 - Load third-party plugins into channels or mixer slots.
 - Some edits inside FL have no FL undo when made from a script (step sequencer).
-  Use "undo" in the Sessionmate chat for those.
+  Use "undo" in the AnySesh chat for those.
 
 From 0.5: when you ask for one of these, or FL can't do a step, the chat shows why and the steps to do it by hand.
 
@@ -49,7 +49,7 @@ From 0.5: when you ask for one of these, or FL can't do a step, the chat shows w
 
 ## Reporting
 
-- Sessionmate sends nothing by itself. To report a bug, save the log in the window
+- AnySesh sends nothing by itself. To report a bug, save the log in the window
   (*Settings → Diagnostics → Save log*; 0.4 and older: *Collect report*) and attach the file to an issue
   or a #bugs post. The Windows user name in paths is replaced with `%USERPROFILE%`; sample names you rated
   stay in the file; your requests only if you turn on "Include my requests in the log".

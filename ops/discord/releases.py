@@ -8,7 +8,7 @@ from .api import Discord
 
 EMBED_LIMIT = 4096
 COLOR = 0xFF5E00  # brand orange
-LOGO = "https://raw.githubusercontent.com/nikita-ivlev/sessionmate/main/assets/logo.png"
+LOGO = "https://raw.githubusercontent.com/nikita-ivlev/anysesh/main/assets/logo.png"
 PING_ROLE = "release-pings"  # role key in server.toml: members pick it in onboarding
 
 
@@ -29,7 +29,7 @@ def announce_body(tag: str, url: str, notes: str, ping: str | None = None, downl
         "content": content,
         "allowed_mentions": {"roles": [ping] if ping else []},
         "embeds": [{
-            "title": f"Sessionmate {tag}",
+            "title": f"AnySesh {tag}",
             "url": url,
             "description": head + notes + tail,
             "color": COLOR,
@@ -50,7 +50,7 @@ def announce(dc: Discord, cfg: dict, tag: str, url: str, notes: str, channel: st
     _no_private_terms(notes)
     cid = server.channel_id(cfg, channel or default_channel(tag))
     me = dc.get("/users/@me")["id"]
-    title = f"Sessionmate {tag}"
+    title = f"AnySesh {tag}"
     for m in dc.get(f"/channels/{cid}/messages?limit=30"):
         if m["author"]["id"] == me and any(e.get("title") == title for e in m.get("embeds", [])):
             echo(f"  {tag} already announced (message {m['id']})")

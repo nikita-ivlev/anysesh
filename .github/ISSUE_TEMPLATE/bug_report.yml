@@ -5,13 +5,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for testing Sessionmate! One bug per issue, please.
-        Do not paste API keys. Sessionmate never puts your key into the report.
+        Thanks for testing AnySesh! One bug per issue, please.
+        Do not paste API keys. AnySesh never puts your key into the report.
   - type: input
     id: version
     attributes:
-      label: Sessionmate version
-      description: Sessionmate window → Settings → Diagnostics, first line. Or the Setup file name.
+      label: AnySesh version
+      description: AnySesh window → Settings → Diagnostics, first line. Or the Setup file name.
       placeholder: 0.3.0-alpha.1
     validations:
       required: true
@@ -62,8 +62,8 @@ body:
     attributes:
       label: Log file
       description: |
-        Sessionmate window → Settings → Diagnostics → Save log.
-        Drag the `sessionmate_log_….zip` here. Your Windows user name is masked in it; names of
+        AnySesh window → Settings → Diagnostics → Save log.
+        Drag the `anysesh_log_….zip` here. Your Windows user name is masked in it; names of
         sounds you rated stay in it; your requests only if you turned on "Include my requests in the log".
         Version 0.4 and older: Collect report, drag `support_diagnostics_bundle.json`.
     validations:

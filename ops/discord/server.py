@@ -196,7 +196,7 @@ class Live:
 # --- text helpers -------------------------------------------------------------------------------
 
 def render(text: str, refs: dict[str, dict[str, str]], planned: dict[str, set[str]] | None = None) -> str:
-    """{#bugs} -> channel link, {@release-pings} -> role, {:sessionmate} -> server emoji.
+    """{#bugs} -> channel link, {@release-pings} -> role, {:anysesh} -> server emoji.
 
     planned: keys server.toml has but the server not yet (a dry run before they exist) -> plain text.
     """
