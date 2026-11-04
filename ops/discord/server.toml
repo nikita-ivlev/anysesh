@@ -7,7 +7,7 @@
 [guild]
 id = "1565368514670370826"
 name = "AnySesh"
-description = "AI assistant inside FL Studio, made by Nick Ivlev (instagram.com/nick_ivlev). Open alpha: bugs, ideas, releases."
+description = "Your AI mate, right inside FL Studio. By Nick Ivlev (instagram.com/nick_ivlev). Open alpha: bugs, ideas, releases."
 preferred_locale = "en-US"
 verification_level = 2  # a Discord account younger than 5 minutes can read, and write once it is older: no ban
 explicit_content_filter = 2
@@ -285,7 +285,7 @@ roles = ["release-pings"]
 
 [welcome_screen]
 enabled = true
-description = "AI assistant inside FL Studio. Open alpha: grab the build, tell us what breaks."
+description = "Your AI mate, right inside FL Studio. Open alpha: grab the build, tell us what breaks."
 
 [[welcome_screen.channel]]
 channel = "welcome"
