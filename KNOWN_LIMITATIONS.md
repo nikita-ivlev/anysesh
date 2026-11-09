@@ -39,6 +39,17 @@
 
 From 0.5: when you ask for one of these, or FL can't do a step, the chat shows why and the steps to do it by hand.
 
+## Sounds (0.7)
+
+- **Stems** are split on your CPU: a 3-minute song takes about 1.5–4.5 minutes, FL stays playable.
+  The first split downloads the model (13 MB). "More precise" needs 16 GB of RAM and takes about 4 times longer.
+  The graphics card is not used yet.
+- **Copies fitted to your song and stems** are saved in your sorted folder under `_Fitted` and `_Stems`.
+  AnySesh never deletes them: your projects may use them. Delete them yourself when you no longer need them.
+- **Plugin screens:** your AI must be able to see pictures (many local Ollama models cannot). Some plugins draw
+  their window on the graphics card, and the picture comes out empty. In both cases the answer comes from the knob names.- **Presets by words** load the presets of FL's own synths. For another synth, load it in a channel first:
+  AnySesh then picks among its own preset list.
+
 ## Models
 
 - **Ollama** needs 16 GB RAM and a GPU with 8 GB; on weaker PCs use a cloud model.
