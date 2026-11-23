@@ -54,14 +54,14 @@ From 0.5: when you ask for one of these, or FL can't do a step, the chat shows w
 ## Synth knobs and presets (0.10)
 
 - **One part of a sound** ("oscillator B an octave down", "LFO 1 faster") works when the plugin shows its knobs
-  to FL. Some plugins show only a few knobs or none: then AnySesh lists the knobs it sees and tells you what to turn.
+  to FL. Some plugins show only a few knobs or only macros (Phase Plant): then AnySesh lists the knobs it sees and
+  tells you what to turn.
 - **Movement on a knob** ("make the cutoff move at 1/4") is written as automation in the pattern, as with
   "open the filter over 8 bars". Serum 2 and Vital get an LFO inside the sound instead.
 - **Preset files:** when FL lists a plugin's presets only as "Prog 1, Prog 2…", AnySesh looks for the plugin's
-  own preset files. It loads FL presets (.fst) and Serum 2 presets (.SerumPreset) itself. For other formats
-  (.fxp, .vstpreset and the plugin's own) it names the preset and its folder: open it in the plugin's browser.
-  Presets in a folder AnySesh does not know are not found.
-- **Serum 2:** moving the level of oscillator B, the noise or the sub with an LFO or envelope is new; check it by ear.
+  own preset files. It loads FL presets (.fst) and Serum 2 presets (.SerumPreset) itself. FL takes no other preset
+  file from AnySesh (.fxp, .vstpreset, .ffp, .phaseplant: FL only renames the channel), so for those it names the
+  preset and its folder: open it in the plugin's browser. Presets in a folder AnySesh does not know are not found.
 
 ## Models
 
