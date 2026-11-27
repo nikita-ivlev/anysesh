@@ -62,6 +62,13 @@ From 0.5: when you ask for one of these, or FL can't do a step, the chat shows w
   own preset files. It loads FL presets (.fst) and Serum 2 presets (.SerumPreset) itself. FL takes no other preset
   file from AnySesh (.fxp, .vstpreset, .ffp, .phaseplant: FL only renames the channel), so for those it names the
   preset and its folder: open it in the plugin's browser. Presets in a folder AnySesh does not know are not found.
+- **Sounds by words on FLEX and Sytrus** ("a reese in Sytrus") are not set from knobs. Their knobs show only a
+  percent of the preset, not seconds or hertz, so AnySesh cannot aim a knob at a value. Pick a preset instead.
+- **3x Osc wave shape:** FL does not show the name of the shape, so AnySesh cannot set it. "Reese 2" on 3x Osc
+  plays on the default shape. Turn the shape knob by hand.
+- **A loop in another tempo:** AnySesh sets the sampler's Time, but FL does not let it set the stretch Mode.
+  After "loop on the grid", set Channel settings > Time stretching > Mode to Stretch yourself, or the pitch moves.
+  Or ask for a copy in the song's tempo.
 
 ## Models
 
